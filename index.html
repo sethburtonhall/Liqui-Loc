@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Liqui-Loc Sales Report</title>
+	<meta name="description" content="">
+  	<meta name="author" content="">
+
+  	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  	<!--[if lt IE 9]>
+    	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+
+	<!--[if lt IE 9]>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="css/ie.css" />
+	<![endif]-->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+  	<link rel="shortcut icon" href="images/favicon.ico">
+  	<link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+  	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png"/>
+  	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"/>
+
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fittext.min.js"></script>
+	<script src="js/jquery.fitvids.js"></script>
+	<script src="js/jquery.easing.js"></script>
+</head>
+<body>
+	<div id="nav" class="container">
+		<div class="row">
+			<div class="twelvecol last">
+				<nav>
+					<h1 class="logo">
+						<a href="#intro" class="selected">Liqui-Loc</a>
+					</h1>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div id="intro" class="container header">
+		<div class="row">	
+			<div class="twelvecol last intro">
+				<h1>2011 Liqui-Loc Sales Report</h1>
+				<p>Welcome to ZappaTec's Sales Support page for Liqui-Loc. We hope you'll utilize the sales information provided here to benefit your sales strategies and activities. Below is a video overview of Liqui-Loc sales from 2011.</p>
+			</div>
+		</div>
+	</div>
+	<div id="total_2011" class="container main first">
+		<div class="row">
+			<div class="twelvecol">
+				<h2 class="left" ></h2>
+				<!-- <iframe src="http://player.vimeo.com/video/34933332?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> -->
+			</div>
+<!-- 			<div class="threecol last">
+				<aside>
+					<img class="top-pic" src="img/ad3.jpg">
+					<img class="bottom-pic" src="img/ad5.jpg">
+				</aside>
+			</div> -->
+
+		</div>
+	</div>
+<script type="text/javascript">
+	$("h1, h2").fitText(1.32);
+	$(".container").fitVids();
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	   $('a[href*=#]').bind('click', function(e) {
+	        e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
+
+	        var target = $(this).attr("href"); //Get the target
+
+	        // perform animated scrolling by getting top-position of target-element and set it as scroll target
+	        $('html, body').stop().animate({ scrollTop: $(target).offset().top }, 2000, 'easeOutExpo', function() {
+
+	             location.hash = target;  //attach the hash (#jumptarget) to the pageurl
+	        });
+
+	        return false;
+	   });
+	});
+</script>
+
+<script language="javascript" type="text/javascript">
+	$(function() {
+	    $('.start').addClass('active');
+	        $('#nav a').click(function() {
+	        $('#nav a').removeClass('active');
+	        $(this).addClass('active');             
+	   });
+	});
+</script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

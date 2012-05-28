@@ -1,0 +1,36 @@
+FAQ
+	Use JS for smooth scrolling
+	a href="id"
+
+Announcement boxes
+	red
+	green
+	yellow
+
+Jot Pro Contact Form????
+
+Luke's Photos
+
+Home Slider?
+
+Pictos????
+
+Skype with Les
+
+	TO DO:
+
+	1) Find best app to include for "video" of data - Keynote
+
+	2) Determine best comment system - Disqus
+	
+	3) Determine look and feel of page - youtube sidebar, slider, sidebar, comments
+	
+	4) Determine scrolling functionality.  Like YouTube.
+	
+	5) Do simple mock-up to explain functionality to Quint and Clay
+		http://www.authorstream.com/Presentation/godisable1-980798-whereswellnesspresentation-1/
+		http://www.wpzoom.com/themes/videozoom/
+	
+	6) Determine outside costs
+	
+	7) Workup Quote

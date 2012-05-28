@@ -1,0 +1,767 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*
+******************************
+* =reset
+******************************
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
+
+
+/*
+******************************
+* =HTML5 display definitions
+******************************
+*/
+
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+
+audio:not([controls]) {
+    display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+
+[hidden] {
+    display: none;
+}
+
+
+/*
+******************************
+* =base
+******************************
+*/
+
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Keeps page centred in all browsers regardless of content height
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    overflow-y: scroll; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+    -ms-text-size-adjust: 100%; /* 3 */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+
+body {
+    margin: 0;
+}
+
+/* 
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+
+/*
+******************************
+* =links
+******************************
+*/
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+
+/*
+******************************
+* =typography
+******************************
+*/
+
+/*
+ * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+
+b, 
+strong { 
+    font-weight: bold; 
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+
+/* 1 */
+
+q {
+    quotes: none;
+}
+
+/* 2 */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+small {
+    font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+
+/*
+******************************
+* =lists
+******************************
+*/
+
+ul,
+ol {
+    margin-left: 0;
+    padding: 0 0 0 0px;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+
+/*
+******************************
+* =embedded content
+******************************
+*/
+
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9 
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+/*
+************************************************************************************************************************
+* =! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com  
+************************************************************************************************************************
+*/
+
+.container {
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.row {
+width: 100%;
+max-width: 1140px;
+min-width: 755px;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+margin-right: 3.8%;
+float: left;
+min-height: 1px;
+}
+
+.row .onecol {
+width: 4.85%;
+}
+
+.row .twocol {
+width: 13.45%;
+}
+
+.row .threecol {
+width: 22.05%;
+}
+
+.row .fourcol {
+width: 30.75%;
+}
+
+.row .fivecol {
+width: 39.45%;
+}
+
+.row .sixcol {
+width: 48%;
+}
+
+.row .sevencol {
+width: 56.75%;
+}
+
+.row .eightcol {
+width: 65.4%;
+}
+
+.row .ninecol {
+width: 74.05%;
+}
+
+.row .tencol {
+width: 82.7%;
+}
+
+.row .elevencol {
+width: 91.35%;
+}
+
+.row .twelvecol {
+width: 100%;
+float: left;
+}
+
+.last {
+margin-right: 0px;
+}
+
+img, object, embed {
+max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+
+/*
+******************************
+* =smaller screens
+******************************
+*/
+
+@media only screen and (max-width: 1023px) {
+
+  body {
+  font-size: 0.8em;
+  line-height: 1.5em;
+  }
+  
+  }
+
+
+/*
+******************************
+* =mobile
+******************************
+*/
+
+@media handheld, only screen and (max-width: 767px) {
+
+  body {
+  font-size: 16px;
+  -webkit-text-size-adjust: none;
+  }
+  
+  .row, body, .container {
+  width: 100%;
+  min-width: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  }
+  
+  .row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+  width: auto;
+  float: none;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+}
+
+/*
+******************************
+* =@font-face
+******************************
+*/
+
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('../fonts/Rokkitt-webfont.eot');
+    src: url('../fonts/Rokkitt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Rokkitt-webfont.woff') format('woff'),
+         url('../fonts/Rokkitt-webfont.ttf') format('truetype'),
+         url('../fonts/Rokkitt-webfont.svg#RokkittRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+******************************
+* =General Styles
+******************************
+*/
+
+body {
+  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}
+
+header {
+  height:56px;
+  padding: 20px 0px 40px 0px;
+}
+
+
+h2 {
+  font-size: 2.5em;
+  font-family: 'Rokkitt', serif;
+  color: #111;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: 'Rokkitt', serif;
+  color: #111;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+
+a:hover {
+    color: #C42F2F;
+    text-decoration: none;
+}
+
+a.active {
+  color: #C42F2F;
+}
+
+
+p {
+  font-size:1.2em;
+  line-height: 1.5em;
+  color: #111;
+} 
+
+/*
+******************************
+* =nav
+******************************
+*/
+
+.year {
+  font-size:2.4em;
+}
+
+nav {
+  position: fixed;
+  padding-top:10px;
+/*  background-color:rgba(4,4,4,.1);*/
+  background-color:#fdfefb;
+  width: 271px;
+  margin: -15px 0 0 -300px;
+  border-radius:10px;
+  -moz-box-shadow: 0px 1px 3px #555;
+  -webkit-box-shadow: 0px 1px 3px #555;
+  box-shadow: 0px 1px 3px #555;
+}
+
+nav ul {
+  height: 300px;
+}
+
+nav ul li {
+  display: block;
+  font-family: 'Rokkitt', serif;
+  font-size:1.7em;
+  font-weight: bold;
+  text-align: center !important;
+  line-height:1.5em;
+}
+
+
+
+/*
+******************************
+* =header
+******************************
+*/
+.header {
+  background-color: #699acc;
+  z-index: 1;
+  width: 97.9%;
+  border-top: 8px #fdfefb solid;
+  border-bottom: 8px #fdfefb solid;
+
+}
+
+h1.logo {
+  background: white url(../img/logo.png) no-repeat center;
+  text-indent: -9999px !important;
+  width:251px;
+  height:50px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+
+h1.logo a {
+  display: block;
+  width:251px;
+  height:70px;
+}
+
+/*
+******************************
+* =aside
+******************************
+*/
+
+aside {
+  position: relative;
+  background-color: #d2efa4;
+  width: 251px;
+  height: 482px;
+  margin-top: 84px;
+}
+
+/*aside {
+  margin: 84px 0px 0px 0px;
+
+}*/
+.bottom {
+  position: absolute;
+  display: block;
+  bottom: 8px;
+}
+
+/*
+******************************
+* =main
+******************************
+*/
+.intro {
+  padding:30px 0;
+}
+
+.intro h1 {
+  padding-bottom:30px;
+  font-size: 4em;
+  font-family: 'Rokkitt', serif;
+  color: #111;
+} 
+
+.main {
+  background-color: #d2efa4;
+  padding-top: 30px;
+}
+
+.main h1.right {
+  padding-bottom:20px;
+  font-size: 4em;
+  font-family: 'Rokkitt', serif;
+  color: #111;
+  text-align:right;
+}
+
+.main h1.left {
+  padding-bottom:20px;
+  font-size: 4em;
+  font-family: 'Rokkitt', serif;
+  color: #111;
+  text-align:left;
+}
+
+#total_2011, #report_1, #report_2, #report_3, #report_4 {
+  padding-bottom:30px;
+}
+
+
+.underside {
+  background-color: #d2efa4;
+  padding-bottom:100px;
+}
+
+.discussion {
+  background-color: rgba(239,249,222,.3);
+  border-radius:10px;
+}
+
+.discussion h3 {
+  padding:20px 0 0 20px;
+  font-size: 2.5em;
+  font-family: 'Rokkitt', serif;
+  color: #111;
+}
+
+.discussion p {
+  padding:10px 20px 20px;
+}
+
+.discussion li {
+  list-style: disc;
+  padding:10px 20px 20px;
+  margin-left: 60px;
+
+}
+/*
+******************************
+* =faq
+******************************
+*/
+
+#accordion { margin: 0; padding: 0; }
+#accordion dd { margin: 0 0 5px 0; padding: 0; }
+
+/*
+******************************
+* =downloads
+******************************
+*/
+
+#downloads h1 {
+  padding-bottom:20px;
+  font-size: 4em;
+  font-family: 'Rokkitt', serif;
+  color: #111;
+  text-align:center;
+}
+
+#downloads img {
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 30px;
+}
+
+/*
+******************************
+* =footer
+******************************
+*/
+
+.back-to-top {
+  font-weight: bold;
+  text-align: center !important;
+  padding: 30px 30px 50px;
+}
+
+.back-to-top a {
+  background-color: #FDFEFB;
+  padding: 10px 15px;
+  border-radius: 10px;  
+}
+
+
+
+
+
